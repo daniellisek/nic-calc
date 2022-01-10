@@ -11,7 +11,7 @@ export const Calculator = (props) => {
                             type="number" 
                             value={props.value}
                             onChange={(event) => {
-                                props.setValue(event.target.value)
+                                props.setValue(parseInt(event.target.value))
                             }}
                         />
                     </div>
@@ -21,7 +21,7 @@ export const Calculator = (props) => {
                             type="number" 
                             value={props.value1}
                             onChange={(event) => {
-                                props.setValue1(event.target.value)
+                                props.setValue1(parseInt(event.target.value))
                             }}
                         />
                     </div>
